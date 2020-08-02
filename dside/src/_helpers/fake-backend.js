@@ -1,7 +1,8 @@
 export function configureFakeBackend() {
-    let users = [{ id: 1, username: 'test', password: 'test', firstName: 'Test', lastName: 'ItsMe' },
-    { id: 2, username: 'Mark', password: 'Mark', firstName: 'Test', lastName: 'Mark' },
-    { id: 3, username: 'Julius', password: 'Julius', firstName: 'Test', lastName: 'Julius' }
+    let users = [{ id: 1, username: 'test', password: 'test', firstName: 'Test', lastName: 'Anthony' },
+    { id: 2, username: 'Mark', password: '*', firstName: 'Test', lastName: 'Mark' },
+    { id: 3, username: 'Julius', password: '*', firstName: 'Test', lastName: 'Julius' },
+    { id: 4, username: 'Cleo', password: '*', firstName: 'Test', lastName: 'Cleo' }
 ];
     let realFetch = window.fetch;
     window.fetch = function (url, opts) {

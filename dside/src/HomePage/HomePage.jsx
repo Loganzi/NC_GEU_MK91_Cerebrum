@@ -26,14 +26,24 @@ class HomePage extends React.Component {
         return (
             <div className="col-md-6 col-md-offset-3">
                 <h4>Greetings Dr {user.firstName}!</h4>
-                <p>Patients to be looked into:</p>
-                <h3></h3>
-                {users.loading && <em>Loading users...</em>}
+                <p>Active Symptoms to be looked :</p>
+                {users.loading && <em>Loading ...</em>}
                 {users.length &&
                     <ul>
                         {users.map((user, index) =>
                             <li key={user.id}>
-                                {user.firstName + ' ' + user.lastName}
+                                {user.firstName}
+                            </li>
+                        )}
+                    </ul>
+                }
+                <p>Regular Patients to be looked into:</p>
+                {users.loading && <em>Loading Patients...</em>}
+                {users.length &&
+                    <ul>
+                        {users.map((user, index) =>
+                            <li key={user.id}><Link to ="/form-style-1.html">
+                                {user.firstName + ' ' + user.lastName}</Link>
                             </li>
                         )}
                     </ul>
