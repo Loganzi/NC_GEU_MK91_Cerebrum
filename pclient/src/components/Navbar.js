@@ -19,13 +19,15 @@ const NavBar = () => {
           <Link to="/form">Registration</Link>
         </li>,
         //<li key="2">
-         // <Link to="/profile">Records</Link>
+        // <Link to="/profile">Records</Link>
         //</li>,
-        //<li key="3">
-          //<Link to="/create">Create New Record</Link>
-        //</li>,
-        <li key="4"><Link to="/PatientLogin">Patient Login</Link></li>,
+        <li key="3">
+          <Link to="/pcomplaint">Complaint</Link>
+        </li>,
         <li key="5">
+          <Link to="/PatientLogin">Patient Login</Link>
+        </li>,
+        <li key="6">
           <button
             className="btn #01579b light-blue darken-4"
             onClick={() => {
@@ -40,12 +42,9 @@ const NavBar = () => {
       ];
     } else {
       return [
-        <li key="6">
+        <li key="7">
           <Link to="/signin">Signin</Link>
         </li>,
-
-        
-        
       ];
     }
   };
@@ -121,7 +120,6 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
 
 /*
 <li key="7">

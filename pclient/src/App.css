@@ -63,7 +63,9 @@ h2 {
 .material-icons:hover {
   cursor: pointer;
 }
-::placeholder { 
-  color: black;
-  opacity: 1; 
+
+::placeholder {
+  color: rgb(156, 156, 160);
+  opacity: 1;
+
 }

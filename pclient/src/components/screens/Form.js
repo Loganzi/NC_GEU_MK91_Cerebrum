@@ -60,8 +60,8 @@ const Form = () => {
   };
 
   return (
-    <div className="FormCard input-field">
-      <div className="formcard">
+    <div className="FormCard ">
+      <div className="formcard input-field">
         <h2 className="regFormH2">Registration Form</h2>
         <input
           type="text"

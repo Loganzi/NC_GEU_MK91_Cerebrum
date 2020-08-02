@@ -15,6 +15,7 @@ import Reset from "./components/screens/Reset";
 import PatientLogin from "./components/screens/PatientLogin";
 import NewPassword from "./components/screens/Newpassword";
 import Form from "./components/screens/Form";
+import Complaint from "./components/screens/pComplaint";
 export const UserContext = createContext();
 
 const Routing = () => {
@@ -52,13 +53,15 @@ const Routing = () => {
       <Route path="/form">
         <Form />
       </Route>
+      <Route path="/pcomplaint">
+        <Complaint />
+      </Route>
       <Route path="/myfollowingpost">
         <SubscribedUserPosts />
       </Route>
       <Route exact path="/reset">
         <Reset />
       </Route>
-
 	<Route path="/PatientLogin">
         <PatientLogin />
       </Route>
