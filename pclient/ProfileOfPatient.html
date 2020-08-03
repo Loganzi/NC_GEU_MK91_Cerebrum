@@ -1,200 +1,241 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link
+      type="icon"
+      rel="stylesheet"
+      href="D:\Documents\SIH\NC_GEU_MK91_Cerebrum\NC_GEU_MK91_Cerebrum\pclient\public\favicon.ico"
+      media="screen,projection"
+    />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f5f5 grey lighten-4;
-}
-a {
-  color: black !important;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f5f5f5 grey lighten-4;
+      }
+      a {
+        color: black !important;
+      }
 
-* {
-  box-sizing: border-box;
-}
+      * {
+        box-sizing: border-box;
+      }
 
-/* Add padding to containers */
-.container {
-  padding: 40px;
-  background-color: white;
-}
+      /* Add padding to containers */
+      .container {
+        margin: 30px auto;
+        width: 50%;
+        padding: 40px;
+        background-color: white;
+      }
 
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
+      /* Full-width input fields */
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+      }
 
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
+      input[type="text"]:focus,
+      input[type="password"]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
 
-/* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
+      /* Overwrite default styles of hr */
+      hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+      }
 
-/* Set a style for the submit button */
-.registerbtn {
-  background-color: #338EFF;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
+      /* Set a style for the submit button */
+      .registerbtn {
+        background-color: #338eff;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
 
-.registerbtn:hover {
-  opacity: 1;
-}
+      .registerbtn:hover {
+        opacity: 1;
+      }
 
-/* Add a blue text color to links */
-a {
-  color: dodgerblue;
-}
+      /* Add a blue text color to links */
+      a {
+        color: dodgerblue;
+      }
 
-/* Set a grey background color and center the text of the "sign in" section */
-.signin {
-  background-color: #f1f1f1;
-  text-align: center;
-}
+      /* Set a grey background color and center the text of the "sign in" section */
+      .signin {
+        background-color: #f1f1f1;
+        text-align: center;
+      }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet');
 
+      .brand-logo,
+      h2 {
+        font-family: "Roboto", sans-serif;
+      }
 
-.brand-logo,
-h2 {
-  font-family: "Roboto", sans-serif;
-}
+      .mycard {
+        margin-top: 30px;
+      }
+      .auth-card {
+        padding: 20px;
+        text-align: center;
+        max-width: 400px;
+        margin: 10px auto;
+      }
 
-.mycard {
-  margin-top: 30px;
-}
-.auth-card {
-  padding: 20px;
-  text-align: center;
-  max-width: 400px;
-  margin: 10px auto;
-}
+      .FormCard {
+        width: 50%;
+        margin: 50px auto 0px auto;
+        max-width: 500px;
+      }
 
-.FormCard {
-  width: 50%;
-  margin: 50px auto 0px auto;
-  max-width: 500px;
-}
+      .regFormH2 {
+        text-align: center;
+        color: rgb(43, 42, 42);
+      }
 
-.regFormH2 {
-  text-align: center;
-  color: rgb(43, 42, 42);
-}
+      .input-field input[type="text"]:focus {
+        border-bottom: 1px solid rgb(151, 179, 231) !important;
+        box-shadow: 0 1px 0 0 rgb(151, 179, 231) !important;
+      }
 
-.input-field input[type="text"]:focus {
-  border-bottom: 1px solid rgb(151, 179, 231) !important;
-  box-shadow: 0 1px 0 0 rgb(151, 179, 231) !important;
-}
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+      .item {
+        width: 30%;
+      }
 
-.item {
-  width: 30%;
-}
+      .home-card {
+        max-width: 500px;
+        height: max-content;
+        margin: 26px auto;
+      }
+      .collection-item {
+        width: 100%;
+      }
 
-.home-card {
-  max-width: 500px;
-  height: max-content;
-  margin: 26px auto;
-}
-.collection-item {
-  width: 100%;
-}
+      #toast-container {
+        top: 30px !important;
+        right: 20px !important;
+        left: auto !important;
+      }
 
-#toast-container {
-  top: 30px !important;
-  right: 20px !important;
-  left: auto !important;
-}
-
-.material-icons:hover {
-  cursor: pointer;
-}
-::placeholder { 
-  color: black;
-  opacity: 1; 
-}
-</style>
-  <nav>
-    <div class="nav-wrapper #bbdefb blue lighten-4 ">
-      <a href="#" class="brand-logo left">Digital healthcare</a>
-      <ul id="nav-mobile" class="right">
-        <li><a href="sass.html">Profile</a></li>
-        <li><a href="badges.html">Records</a></li>
-         <button class="btn #01579b light-blue darken-4">
+      .material-icons:hover {
+        cursor: pointer;
+      }
+      ::placeholder {
+        color: black;
+        opacity: 1;
+      }
+    </style>
+    <nav>
+      <div class="nav-wrapper #bbdefb blue lighten-4">
+        <a href="#" class="brand-logo left">Digital Healthcare</a>
+        <ul id="nav-mobile" class="right">
+          <li><a href="sass.html">Profile</a></li>
+          <li><a href="badges.html">Records</a></li>
+          <button class="btn #01579b light-blue darken-4">
             Logout
           </button>
-      </ul>
-    </div>
-  </nav>
-
-</head>
-<body>
-
-<form action=" ">
-
-
-  <div class="container" >
-    <h3><b>Patient Name:</b> Siddhant Gupta </h3>
-<hr>
-    <h6><p><b>Unique ID:</b> 13579</p></h6>
-<hr>
-    <h6><p><b>Gender:</b> Male</p></h6>
-<hr>
-    <h6><p><b>blood group:</b> O+</p></h6>
-<hr>
-    <h6><p><b>dob:</b> 21/06/1999</p></h6>
-<hr>
-<h6><p><b>Address:</b> </p></h6>
-<hr>
-<h6><p><b>Marital Status: </b>   </p></h6>
-<hr>
-<h6><p><b>Occupation: </b>  </p></h6>
-<hr>
-<h6><p><b>Height (cm): </b>  </p></h6>
-<hr>
-<h6><p><b>Weight(kg): </b>   </p></h6>
-<hr>
-<h6><p><b>Son Of/Daughter Of : </b>   </p></h6>
-<hr>
-<h6><p><b>Allergies: </b>   </p></h6>
-<hr>
-<h6><p><b>Surgical History : </b>   </p></h6>
-<hr>
-<h6><p><b>Obstetrics: </b>   </p></h6>
-<hr>
-<h6><p><b>habits: </b>   </p></h6>
-<hr>
-    <button  class="registerbtn">Update</button>
-  </div>
- 
-</form>
-
-</body>
+        </ul>
+      </div>
+    </nav>
+  </head>
+  <body>
+    <form action=" ">
+      <div class="container">
+        <h3><b>Patient Name:</b> Siddhant Gupta</h3>
+        <hr />
+        <h6>
+          <p><b>Unique ID:</b> 13579</p>
+        </h6>
+        <hr />
+        <h6>
+          <p><b>Gender:</b> Male</p>
+        </h6>
+        <hr />
+        <h6>
+          <p><b>blood group:</b> O+</p>
+        </h6>
+        <hr />
+        <h6>
+          <p><b>dob:</b> 21/06/1999</p>
+        </h6>
+        <hr />
+        <h6>
+          <p><b>Address:</b> Uttarakhand</p>
+        </h6>
+        <hr />
+        <h6>
+          <p><b>Marital Status: </b></p>
+        </h6>
+        <hr />
+        <h6>
+          <p><b>Occupation: </b></p>
+        </h6>
+        <hr />
+        <h6>
+          <p><b>Height (cm): </b></p>
+        </h6>
+        <hr />
+        <h6>
+          <p><b>Weight(kg): </b></p>
+        </h6>
+        <hr />
+        <h6>
+          <p><b>Son Of/Daughter Of : </b></p>
+        </h6>
+        <hr />
+        <h6>
+          <p><b>Allergies: </b></p>
+        </h6>
+        <hr />
+        <h6>
+          <p><b>Surgical History : </b></p>
+        </h6>
+        <hr />
+        <h6>
+          <p><b>Obstetrics: </b></p>
+        </h6>
+        <hr />
+        <h6>
+          <p><b>habits: </b></p>
+        </h6>
+        <hr />
+        <button class="registerbtn">Update</button>
+      </div>
+    </form>
+  </body>
 </html>
-
