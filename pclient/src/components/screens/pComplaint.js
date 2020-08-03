@@ -66,25 +66,25 @@ const Complaint = () => {
         />
         <input
           type="text"
-          placeholder="Name"
+          placeholder=" नाम (Name) "
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Gender"
+          placeholder="लिंग (Gender)"
           value={gender}
           onChange={(e) => setGender(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Age"
+          placeholder="आयु (Age)"
           value={age}
           onChange={(e) => setAge(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Blood Group"
+          placeholder="रक्त समूह (Blood Group)"
           value={bldgroup}
           onChange={(e) => setBldgroup(e.target.value)}
         />
