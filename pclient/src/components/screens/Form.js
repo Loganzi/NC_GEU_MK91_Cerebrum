@@ -6,7 +6,7 @@ const Form = () => {
   const [uid, setUID] = useState("");
   const [name, setName] = useState("");
   const [gender, setGender] = useState("");
-  const [age, setAge] = useState("");
+  const [phno, setphno] = useState("");
   const [bldgroup, setBldgroup] = useState("");
   const [dob, setDOB] = useState("");
   const [address, setAddress] = useState("");
@@ -30,7 +30,7 @@ const Form = () => {
         uid,
         name,
         gender,
-        age,
+        phno,
         bldgroup,
         dob,
         address,
@@ -84,8 +84,8 @@ const Form = () => {
         <input
           type="text"
           placeholder="मोबाइल नंबर (Mobile Number)"
-          value={age}
-          onChange={(e) => setAge(e.target.value)}
+          value={phno}
+          onChange={(e) => setphno(e.target.value)}
         />
         <input
           type="text"

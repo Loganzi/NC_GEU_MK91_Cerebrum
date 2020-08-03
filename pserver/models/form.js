@@ -13,7 +13,7 @@ const formSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  age: {
+  phno: {
     type: Number,
     required: false,
   },
