@@ -56,17 +56,17 @@ const Complaint = () => {
   return (
     <div className="FormCard ">
       <div className="formcard input-field">
-        <h2 className="regFormH2">Patient Complaint Form</h2>
+        <h2 className="regFormH2">Active Patient Ailment Form</h2>
         <input
           type="text"
-          placeholder="Aadhar/Ration Card/Govt. ID"
+          placeholder="आधार/राशन/सरकारी पहचान पत्र नंबर (Aadhar/Ration Card/Govt. ID)"
           id="Aadhar"
           value={uid}
           onChange={(e) => setUID(e.target.value)}
         />
         <input
           type="text"
-          placeholder=" नाम (Name) "
+          placeholder="पूरा नाम (Name) "
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
@@ -103,7 +103,7 @@ const Complaint = () => {
         /> */}
         <input
           type="number"
-          placeholder="Weight (in kilograms)"
+          placeholder="वजन [किलोग्राम में] (Weight [in kilograms])"
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
         />
@@ -111,7 +111,7 @@ const Complaint = () => {
         <form action="#" onSubmit>
           <p></p>
           <label>
-            <h6>New or follow up check up?</h6>
+            <h6>नई या अनुवर्ती जांच? (New or follow up check up?)</h6>
           </label>
           <p>
             <label>
@@ -122,7 +122,7 @@ const Complaint = () => {
                 value={newVisitYes}
                 onChange={(e) => setVisitYes(true)}
               />
-              <span>New Check-up</span>
+              <span>नया चेकअप (New Check-up)</span>
             </label>
           </p>
           <p>
@@ -134,20 +134,20 @@ const Complaint = () => {
                 value={newVisitNo}
                 onChange={(e) => setVisitNo(true)}
               />
-              <span>Follow-up</span>
+              <span>अनुवर्ती परामर्श (Follow-up)</span>
             </label>
           </p>
         </form>
 
         <input
           type="text"
-          placeholder="Temperature (F)"
+          placeholder="तापमान [फ़ारेनहाइट] (Temperature [F])"
           value={temperature}
           onChange={(e) => setTemp(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Blood Pressure (Sym/Dist)"
+          placeholder="रक्तचाप [सिस्टोलिक/डायस्टोलिक] (Blood Pressure [Sys/Dist])"
           value={BP}
           onChange={(e) => setBP(e.target.value)}
         />
@@ -155,7 +155,7 @@ const Complaint = () => {
 
         <input
           type="text"
-          placeholder="Your Complaint"
+          placeholder="आपकी शिकायत (Your Complaint)"
           value={complaint}
           onChange={(e) => setComplaint(e.target.value)}
         />
@@ -167,7 +167,7 @@ const Complaint = () => {
           className="btn waves-effect waves-light #64b5f6 blue darken-1"
           onClick={() => PostComplaint()}
         >
-          Submit
+          प्रस्तुत / Submit
         </button>
       </div>
     </div>

@@ -65,97 +65,97 @@ const Form = () => {
         <h2 className="regFormH2">Registration Form</h2>
         <input
           type="text"
-          placeholder="Aadhar/Ration Card/Govt. ID"
+          placeholder="आधार/राशन/सरकारी पहचान पत्र नंबर (Aadhar/Ration Card/Govt. ID)"
           value={uid}
           onChange={(e) => setUID(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Name"
+          placeholder="पूरा नाम (Name)"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Gender"
+          placeholder="लिंग (Gender)"
           value={gender}
           onChange={(e) => setGender(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Age"
+          placeholder="मोबाइल नंबर (Mobile Number)"
           value={age}
           onChange={(e) => setAge(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Blood Group"
+          placeholder="रक्त समूह (Blood Group)"
           value={bldgroup}
           onChange={(e) => setBldgroup(e.target.value)}
         />
         <input
           type="date"
-          placeholder="Date Of Birth"
+          placeholder="जन्मतिथि (Date of Birth)"
           value={dob}
           onChange={(e) => setDOB(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Address"
+          placeholder="घर का पता (Address)"
           value={address}
           onChange={(e) => setAddress(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Marital Status"
+          placeholder="वैवाहिक स्थिति (Marital Status)"
           value={married}
           onChange={(e) => setMarried(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Occupation"
+          placeholder="व्यवसाय (Occupation)"
           value={occupation}
           onChange={(e) => setOccupation(e.target.value)}
         />
         <input
           type="number"
-          placeholder="Height (in centimeters)"
+          placeholder="लंबाई सेंटीमीटर (Height [in centimeters])"
           value={height}
           onChange={(e) => setHeight(e.target.value)}
         />
         <input
           type="number"
-          placeholder="Weight (in kilograms"
+          placeholder="वजन [किलोग्राम में] (Weight [in kilograms])"
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Son Of/ Daughter Of/"
+          placeholder="माता – पिता का नाम (Relation [Son Of/ Daughter Of/])"
           value={relation}
           onChange={(e) => setRelation(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Allergies"
+          placeholder="एलर्जी Allergies"
           value={allergies}
           onChange={(e) => setAllergies(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Surgical History"
+          placeholder="सर्जिकल इतिहास (Surgical History)"
           value={surgHist}
           onChange={(e) => setSurgHist(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Obstetric (Complications during pregnancy"
+          placeholder="Obstetric (Complications during pregnancy)"
           value={obstetric}
           onChange={(e) => setObstetric(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Habits (Drinking, Smoking, etc)"
+          placeholder="आदतों [धूम्रपान पीना] (Habits [Drinking, Smoking, etc])"
           value={habits}
           onChange={(e) => setHabits(e.target.value)}
         />
@@ -166,7 +166,7 @@ const Form = () => {
           className="btn waves-effect waves-light #64b5f6 blue darken-1"
           onClick={() => PostForm()}
         >
-          Submit
+          प्रस्तुत / Submit
         </button>
       </div>
     </div>

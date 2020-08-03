@@ -22,7 +22,7 @@ const NavBar = () => {
         // <Link to="/profile">Records</Link>
         //</li>,
         <li key="3">
-          <Link to="/pcomplaint">Complaint</Link>
+          <Link to="/pcomplaint">Active Patient</Link>
         </li>,
         <li key="5">
           <Link to="/PatientLogin">Patient Login</Link>
